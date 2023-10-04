@@ -1,0 +1,59 @@
+@import "../../../common/scss/function.scss";
+@import "../../../common/scss/mixin.scss";
+@import "../../../common/scss/variables.scss";
+
+.container {
+  @include block (block, relative, '', '', 100%, size(27));
+  box-shadow: rgba(0, 0, 0, 0.45) 0 5vw 4.5vw -4.5vw;
+  text-align: center;
+  z-index: 2;
+  & > a {
+    @include block (inline-block, relative, '', '', '', size(27));
+    margin: 0 size(10);
+    line-height: size(27);
+    @media screen and (max-width: 760px) {
+      transform: translateX(75%);
+    }
+  }
+}
+.block-h1 {
+  @include block (block, absolute, size(-6), size(10), '', size(27));
+  @include font (Stapel, size(28), normal, bold, '', $primary);
+  padding: 0;
+  margin: 0;
+}
+.block-icon {
+  @include block (block, relative, size(-27), '', size(25), size(25));
+  margin-left: auto;
+  margin-right: 0;
+  padding-right: size(10);
+  fill: $primary;
+  z-index: 1;
+  cursor: pointer;
+}
+.block-nav {
+  @include block (flex, relative, size(-26), '', size(200), auto);
+  flex-direction: column;
+  flex-basis: 100%;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: left;
+  background-color: $secondary;
+  box-shadow: rgba(0, 0, 0, 0.45) 0 5vw 4.5vw -4.5vw;
+  z-index: 2;
+  & > .item {
+    padding: size(10) size(5); 
+  }
+}
+.item {
+  @include font (Raleway, size(22), normal, normal, 2.46vw, $primary);
+  text-decoration: none;
+  &:active {
+    color: $tertiary;
+  }
+  @media (hover) {
+    &:hover {
+      color: $tertiary;
+    }
+  }
+}

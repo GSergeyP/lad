@@ -1,0 +1,12 @@
+@import "../../../common/scss/mixin.scss";
+@import "../../../common/scss/variables.scss";
+
+.container {
+  @include block (block, relative, '', '', 100%, 20vw);
+  margin: auto;
+  text-align: center;
+  .block {
+    @include block (inline-block, relative, 5vw, '', '', '');
+    @include font (Stapel, 2.55vw, bold, normal, 2.46vw, $primary);
+  }
+}

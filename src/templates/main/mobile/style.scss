@@ -1,0 +1,33 @@
+@import "../../../common/scss/mixin.scss";
+@import "../../../common/scss/variables.scss";
+
+.container {
+  @include block (block, relative, -14vw, '', 100%, 99vw);
+  margin: auto;
+  background-image: url("../../../../src/common/img/bg.png");
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position:  100% 50%;
+  .block-button {
+    @include block (block, relative, 93vw, '', auto, 10vw);
+    @include font (Raleway, 5.63vw, bold, normal, 5.04vw, $quaternary);
+    padding: 0 3vw;
+    margin: auto;
+    background-color: $secondary;
+    border-radius: 0.5vw;
+    border: 0.05vw solid $quaternary;
+    cursor: pointer;
+    &:active {
+      background-color: $tertiary;
+      border-color: $tertiary;
+      color: $secondary;
+    }
+    @media (hover) {
+      &:hover {
+        background-color: $tertiary;
+        border-color: $tertiary;
+        color: $secondary;
+      }
+    }
+  }
+}

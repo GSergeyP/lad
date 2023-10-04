@@ -1,0 +1,75 @@
+@import "../../../common/scss/mixin.scss";
+@import "../../../common/scss/variables.scss";
+
+.container {
+  @include block (flex, relative, '', '', 100%, 35vw);
+
+  .block-div {
+    @include block (flex, relative, '', '', 90%, 35vw);
+    margin: auto;
+    justify-content: space-between; 
+  }
+  .block-button__left, .block-button__right {
+    @include block (block, relative, 27vw, '', 4vw, 4vw);
+    @include font (Stapel, 1.3vw, normal, normal, 0.5vw, $primary);
+    border-radius: 4vw;
+    background-color: $secondary;
+    border: 0.1vw solid $quaternary;
+    z-index: 1;
+    cursor: pointer;
+    &:active {
+      background-color: $tertiary;
+      border-color: $tertiary;
+      color: $secondary;
+    }
+    @media (hover) {
+      &:hover {
+        background-color: $tertiary;
+        border-color: $tertiary;
+        color: $secondary;
+      }
+    }
+  }
+  .block-button__left {
+    left: 25vw;
+  }
+  .block-button__right {
+    right: 25vw;
+  }
+  .item0, .item2 {
+    @include block (block, relative, '', '', 25%, 35vw);
+    overflow: hidden;
+  }
+  .item1 {
+    @include block (block, relative, '', '', 40%, 35vw);
+    overflow: hidden;
+  }
+  .subItem0, .subItem2 {
+    position: relative;
+    top: 3vw;
+    width: auto;
+    height: 20vw;
+  }
+  .subItem0 {
+    left: -10vw;
+  }
+  .subItem2 {
+    left: -5vw;
+  }
+  .subItem1 {
+    position: relative;
+    top: 1vw;
+    left: -10vw;
+    width: auto;
+    height: 35vw;
+  }
+}
+.container-err, .container-load {
+  @include block (block, relative, '', '', 100%, 20vw);
+  margin: auto;
+  text-align: center;
+  .block-err, .block-load {
+    @include block (inline-block, relative, 5vw, '', '', '');
+    @include font (Stapel, 2.55vw, bold, normal, 2.46vw, $primary);
+  }
+}

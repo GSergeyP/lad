@@ -1,0 +1,9 @@
+@import "../../../common/scss/mixin.scss";
+@import "../../../common/scss/variables.scss";
+
+.container {
+  @include block (block, relative, '', '', 95%, 2vw);
+  margin-left: auto;
+  margin-right: 0;
+  border-top: 0.1vw solid $fivefold;
+}

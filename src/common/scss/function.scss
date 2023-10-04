@@ -1,0 +1,3 @@
+@function size($size) {
+  @return calc($size * 1px + ( (100vw - 480px) / ( 1024 - 480) ) )
+}
