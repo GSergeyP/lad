@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.224fa00e.css",
+    "main.js": "/static/js/main.07fdf2de.js",
+    "static/media/bg.png": "/static/media/bg.a97ce5c381adf45f9e1e.png",
+    "static/media/Stapel-Bold.ttf": "/static/media/Stapel-Bold.8622cd113f284ef30df8.ttf",
+    "static/media/Stapel-Bold.woff": "/static/media/Stapel-Bold.49a96913ff01111a0dd6.woff",
+    "static/media/Ralewaythin.ttf": "/static/media/Ralewaythin.22c5a4b195676dd1bce0.ttf",
+    "static/media/Stapel-Bold.woff2": "/static/media/Stapel-Bold.3ea5a2ef75f19297dc7f.woff2",
+    "static/media/Ralewaythin.woff": "/static/media/Ralewaythin.09d6e5e2f87312e6b31d.woff",
+    "static/media/Ralewaythin.woff2": "/static/media/Ralewaythin.ae0612b8ece8f449e4f1.woff2",
+    "static/media/icons.svg": "/static/media/icons.93553aec5aadc546ba69492d8b7c2c4f.svg",
+    "index.html": "/index.html",
+    "main.224fa00e.css.map": "/static/css/main.224fa00e.css.map",
+    "main.07fdf2de.js.map": "/static/js/main.07fdf2de.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.224fa00e.css",
+    "static/js/main.07fdf2de.js"
+  ]
+}
